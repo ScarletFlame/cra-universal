@@ -6,7 +6,7 @@ import {
   handleUniversalRender
 } from '@cra-express/core';
 
-const { default: App } = require('appbase/src/App');
+const { default: App } = require('appbase/src/components/App');
 const clientBuildPath = path.resolve(__dirname, '../client');
 
 let AppEl = App;
@@ -17,8 +17,8 @@ const app = createReactAppExpress({
 });
 
 if (module.hot) {
-  module.hot.accept('appbase/src/App', () => {
-    const { default: App } = require('appbase/src/App');
+  module.hot.accept('appbase/src/components/App', () => {
+    const { default: App } = require('appbase/src/components/App');
     AppEl = App;
     console.log('✅ Server hot reloaded App');
   });

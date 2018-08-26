@@ -2,6 +2,7 @@
   "name": "cra-universal-monorepo",
   "description": "CRA Universal Monorepo",
   "private": true,
+  "version": "0.1.1",
   "scripts": {
     "build": "lerna run build",
     "crau:build": "lerna run crau:build",
